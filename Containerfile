@@ -1,9 +1,9 @@
-# Allow build scripts to be referenced without being copied into the final image
+\# Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/kinoite-main:sha256-bc8c72e546e4af7dd834a4aa237cf9a45eb0d338cd4f171608d28745c680b07f.sig
+FROM ghcr.io/ublue-os/kinoite-main
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
