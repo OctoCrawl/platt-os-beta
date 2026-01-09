@@ -17,7 +17,7 @@ env:
   IMAGE_DESC: "My Customized Universal Blue Image"
   IMAGE_KEYWORDS: "bootc,ublue,universal-blue"
   IMAGE_LOGO_URL: "https://platt.cttech.org/wp-content/uploads/sites/14/2020/05/Platt_Panthers_Color-200x271.png"  # Put your own image here for a fancy profile on https://artifacthub.io/!
-  IMAGE_NAME: "${{ github.event.platt-os-beta }}"  # output image name, usually same as repo name
+  IMAGE_NAME: "${{ github.event.repository.name }}"  # output image name, usually same as repo name
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
   DEFAULT_TAG: "latest"
 
